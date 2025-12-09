@@ -21,3 +21,14 @@ This project helps store product information, manage stock, and generate bills w
 - **MySQL Connector / SQLite3**
 
 ---
+SQL Connection
+┌───────────────┐                ┌────────────────┐
+│   PRODUCTS     │                │     SALES      │
+├───────────────┤                ├────────────────┤
+│ id (PK)        │◄──────────────┤ id (PK)        │
+│ name           │                │ product_name   │
+│ price          │                │ quantity       │
+│ quantity       │                │ total          │
+└───────────────┘                │ date           │
+                                 └────────────────┘
+
