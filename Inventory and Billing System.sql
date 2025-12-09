@@ -1,0 +1,19 @@
+CREATE DATABASE Inventory_System;
+USE Inventory_System;
+
+CREATE TABLE Products (
+    Id INTEGER PRIMARY KEY AUTO_INCREMENT,
+    Name VARCHAR(100) NOT NULL,
+    Price DECIMAL(10,2) NOT NULL,
+    Quantity INT NOT NULL
+);
+
+CREATE TABLE Sales (
+    Id INTEGER PRIMARY KEY AUTO_INCREMENT,
+    Product_Name VARCHAR(100),
+    Quantity INT,
+    Total DECIMAL(10,2),
+    Date DATETIME
+);
+SELECT * FROM Products;
+SELECT * FROM Sales;
